@@ -1,6 +1,9 @@
 #+title: tramp-gh: TRAMP to github repositories
 ** Introduction
 
+*WARNING: This is still under development. The current scheme is subject to
+change as issues are addressed.*
+
 Are you tired of any of the following? =tramp-gh= could be the solution for you:
 + Cloning a GitHub repository just to navigate repositories in Emacs.
 + Searching and browsing in your Emacs text browser, like =eww=, only to find
