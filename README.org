@@ -47,3 +47,19 @@ Add the following to your init script.
 #+begin_src elisp
   (require 'tramp-gh)
 #+end_src
+
+** Usage
+You can change the directory to a GitHub repository directly. For example, if
+you want to go to =github.com/emacsmirror/tramp=, you can do the following in
+your =eshell=.
+
+#+begin_src eshell
+  cd /gh:emacsmirror@tramp:/
+  ls
+#+end_src
+
+#+RESULTS:
+: COPYING    INSTALL      README      aclocal.m4    download.sh  test
+: ChangeLog  Makefile.in  README-GIT  configure.ac  lisp         texi
+
+You may =find-file= and =dired=, just like a local file system.
