@@ -1,0 +1,46 @@
+#+title: tramp-gh: TRAMP to github repositories
+** Introduction
+
+Are you tired of any of the following? =tramp-gh= could be the solution for you:
++ Cloning a GitHub repository just to navigate repositories in Emacs.
++ Searching and browsing in your Emacs text browser, like =eww=, only to find
+  GitHub's rendering is not user-friendly.
++ Switching to an external browser to navigate GitHub repositories on the GitHub
+  website.
++ Struggling to find a download URL for a raw file.
++ Downloading a file from a GitHub repository just to run a few commands or use
+  it in your Emacs Lisp programs.
+
+=tramp-gh= provides read-only access to GitHub repositories without requiring
+you to clone them locally. You can perform the following actions, including but
+not limited to:
++ Change directory (=cd=) to GitHub repositories.
++ Execute read-only commands like =ls=, =cat=, and =grep= in =eshell=.
++ Open read-only files with syntax highlighting and supported modes.
++ Use Dired to browse and navigate.
++ Copy files to your local directory.
++ Access private repos with =gh auth=.
+
+** Installation
+
+*** Prerequisite
+
+The current version of =tramp-gh= requires a command-line tool =gh=. Please
+install it and run the following command.
+
+#+begin_src sh
+  gh auth login
+#+end_src
+
+*** MELPA
+It is not uploaded to MELPA yet.
+
+*** Manuall Installation
+Add =tramp-gh.el= to your =load-path=.
+
+** Setup
+Add the following to your init script.
+
+#+begin_src elisp
+  (require 'tramp-gh)
+#+end_src
